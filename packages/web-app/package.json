@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "wagmi generate && next build",
     "export": "next export",
     "start": "next start",
     "format": "next lint --fix",
