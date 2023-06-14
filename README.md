@@ -1,14 +1,12 @@
 
-# 🏦 Bank - Web3 Savings Network Template
+# 🏦 Web3 Monorepo Template
 
-Banks is a template for the upcoming PoolTogether V5 hyperstructure.
+This is a base starter template for combining Foundry with TurboETH
 
-The template will include support for depositing and withdrawing into prize pool vaults. Plus allow operators to easily deploy new savings assets/vaults and create custom rewards.
-
-The [Web3 Savings Cards prototype](https://web3savings.network) will also incorporated into the final application template.
+Additional Description TBD
 
 ### Examples
-- [bank.turboeth.xyz](bank.turboeth.xyz)
+- TBD
 
 # Status
 
@@ -23,12 +21,12 @@ The template is being actively developed. Right now the focus is the application
 
 *SSH*
 ```bash
-git clone git@github.com:turbo-eth/template-bank-app.git
+git clone git@github.com:turbo-eth/template-foundry-monorepo.git
 ```
 
 *HTTPS*
 ```bash
-git clone https://github.com/turbo-eth/template-bank-app.git
+git clone https://github.com/turbo-eth/template-foundry-monorepo.git
 ```
 
 The `pnpm` CLI is the recommended package manager but `npm` and `yarn` should work too.
@@ -49,10 +47,10 @@ pnpm build
 
 ## 1-Click Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-bank-app&project-name=Bank&repository-name=Bank&demo-title=Bank&env=NEXT_PUBLIC_PROVIDER_PUBLIC&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-bank-app%2Fblob%2Fmain%packages%2FBank-app%2F.env.example)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-foundry-monorepo&project-name=foundry-monorepo&repository-name=foundry-monorepo&demo-title=foundry-monorepo&env=NEXT_PUBLIC_PROVIDER_PUBLIC&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fturbo-eth%template-foundry-monorepo%2Fblob%2Fmain%packages%2Ffoundry-monorepo-app%2F.env.example)
 
 ### Configuration
-Since Bank is a TurboRepo application we have to manually set the deployment configuration.
+Since Foundry Monorepo is a TurboRepo application we have to manually set the deployment configuration.
 
 #### Build & Development Settings
 - Build Command - `pnpm build`
@@ -81,16 +79,16 @@ NEXT_PUBLIC_INFURA_API_KEY=
 
 ## Architecture
 
-Bank is built using Turborepo - an incremental bundler and build system optimized for JavaScript and TypeScript
+Foundry Monorepo is built using Turborepo - an incremental bundler and build system optimized for JavaScript and TypeScript
 
 # How It's Built
-Bank, the TurboETH template, uses a modern Typescript development stack.
+Foundry Monorepo, the TurboETH template, uses a modern Typescript development stack, Nextjs for the webapp, and Foundry for solidity development.
 
 ### Web3 Core
-- [Solbase](https://github.com/Sol-DAO/solbase) - Modern, opinionated, and gas optimized base for smart contract development.
 - [TurboETH](https://github.com/turbo-eth/template-web3-app) - Web3 Application Template
 - [WAGMI CLI](https://wagmi.sh/cli/getting-started) - Automatic React Hook Generation
 - [RainbowKit](https://www.rainbowkit.com/) - Wallet connection manager
+- [Foundry](https://getfoundry.sh/) - development framework for Solidity
 
 ### Web2 Frameworks
 - [TurboRepo](https://www.turboeth.xyz) - Turborepo is an incremental bundler and build system

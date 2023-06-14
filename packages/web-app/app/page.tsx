@@ -2,9 +2,6 @@
 
 import { motion } from 'framer-motion'
 
-import { CardPreviewRender } from '@/components/card-preview-render'
-import { FADE_DOWN_ANIMATION_VARIANTS } from '@/config/design'
-
 export default function Home() {
   return (
     <>
@@ -24,7 +21,7 @@ export default function Home() {
                 },
               },
             }}>
-            <CardPreviewRender />
+            <div>This is the app</div>
           </motion.div>
         </div>
       </section>

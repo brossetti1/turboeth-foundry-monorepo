@@ -14,17 +14,17 @@ interface SiteConfig {
   }
 }
 
-export const SITE_CANONICAL = 'https://bank.turboeth.xyz'
+export const SITE_CANONICAL = 'https://foundry.turboeth.xyz'
 
 export const siteConfig: SiteConfig = {
-  name: 'bank',
-  title: 'bank - web3 savings network',
-  emoji: '🏦',
+  name: 'foundry-monorepo',
+  title: 'foundry-monorepo - web3 monorepo stack',
+  emoji: '',
   description: 'A better way to save.',
   localeDefault: 'en',
   author: 'Kames Geraghty',
   links: {
     twitter: 'https://twitter.com/KamesGeraghty',
-    github: 'https://github.com/turbo-eth/template-bank-app',
+    github: 'https://github.com/turbo-eth/template-foundry-monorepo',
   },
 }

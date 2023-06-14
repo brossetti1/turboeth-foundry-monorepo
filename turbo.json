@@ -1,29 +1,55 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local","NODE_ENV"],
+  "globalDependencies": [
+    "**/.env.*local",
+    "NODE_ENV"
+  ],
   "pipeline": {
     "build": {
-      "outputs": ["build/**", "dist/**"],
-      "dependsOn": ["^build"]
+      "outputs": [
+        "build/**",
+        "dist/**"
+      ],
+      "dependsOn": [
+        "^build"
+      ]
     },
     "clean": {
       "cache": false
     },
     "dev": {
-      "inputs": ["src/**", "public/**", "package.json"],
-      "outputs": ["dist/**", ".next/**", "node_modules/**"],
+      "inputs": [
+        "src/**",
+        "public/**",
+        "package.json"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "node_modules/**"
+      ],
       "cache": false,
       "persistent": true
     },
-    "export": {
-      "outputs": ["out/**"],
-      "dependsOn": ["^build"]
-    },
-    "format": {},
-    "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": []
+    "dev:deploy": {
+      "inputs": [
+        "package.json"
+      ]
     }
+  },
+  "export": {
+    "outputs": [
+      "out/**"
+    ],
+    "dependsOn": [
+      "^build"
+    ]
+  },
+  "format": {},
+  "test": {
+    "outputs": [
+      "coverage/**"
+    ],
+    "dependsOn": []
   }
-} 
-
+}

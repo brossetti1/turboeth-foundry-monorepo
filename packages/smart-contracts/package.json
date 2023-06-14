@@ -4,11 +4,8 @@
   "private": true,
   "scripts": {
     "anvil": "source .env && anvil --fork-url $ANVIL_FORK_URL --chain-id $ANVIL_CHAIN_ID",
-    "build": "pnpm run wagmi",
     "deploy": "source .env && forge create src/Counter.sol:Counter --rpc-url $FORGE_RPC_URL --private-key $FORGE_PRIVATE_KEY --etherscan-api-key $ETHERSCAN_API_KEY --verify",
-    "dev:deploy": "source .env && forge create src/Counter.sol:Counter --rpc-url http://127.0.0.1:8545 --private-key $ANVIL_PRIVATE_KEY",
-    "dev": "pnpm run wagmi & wagmi generate --watch & pnpm run anvil",
-    "wagmi": "wagmi generate"
+    "dev:deploy": "source .env && forge create src/Counter.sol:Counter --rpc-url http://127.0.0.1:8545 --private-key $ANVIL_PRIVATE_KEY"
   },
   "dependencies": {
     "@wagmi/cli": "^1.0.0"

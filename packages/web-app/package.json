@@ -1,5 +1,5 @@
 {
-  "name": "@turbo-eth/template-bank-app",
+  "name": "@turbo-eth/template-foundry-monorepo",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -60,7 +60,6 @@
     "@vercel/analytics": "^0.1.6",
     "@vercel/og": "^0.0.27",
     "@wagmi/chains": "^0.2.13",
-    "@wagmi/cli": "^0.1.11",
     "class-variance-authority": "^0.4.0",
     "classnames": "^2.3.2",
     "clsx": "^1.2.1",
@@ -99,7 +98,7 @@
     "@types/node": "^17.0.31",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
-    "@wagmi/cli": "^0.1.2",
+    "@wagmi/cli": "^0.1.14",
     "autoprefixer": "^10.4.13",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
